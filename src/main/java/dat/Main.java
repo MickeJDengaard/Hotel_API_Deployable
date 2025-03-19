@@ -1,5 +1,6 @@
 package dat;
 
+import com.nimbusds.jose.shaded.json.JSONUtil;
 import dat.config.ApplicationConfig;
 import dat.controllers.impl.ExceptionController;
 import dat.exceptions.ApiException;
@@ -14,5 +15,6 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationConfig.startServer(7070);
+        System.out.println("hej");
     }
 }
